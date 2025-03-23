@@ -1,4 +1,4 @@
-package java17.examples;
+package java8.examples;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -29,7 +29,7 @@ public class TryWithResources {
             throw new RuntimeException(e);
         }
         /*
-            finally clause + close not needed, because resource is implicitly closed.
+            Java 8: finally clause + close not needed, because resource is implicitly closed.
          */
     }
 }
