@@ -35,23 +35,7 @@ public class PatternMatchingInstanceof {
     }
 }
 
-abstract class Animal {
-    private String name;
-
-    public Animal(String name) {
-        this.name = name;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-}
-
-class Dog extends Animal {
+final class Dog extends Animal {
 
     public Dog(String name) {
         super(name);
@@ -62,7 +46,7 @@ class Dog extends Animal {
     }
 }
 
-class Cat extends Animal {
+final class Cat extends Animal {
     public Cat(String name) {
         super(name);
     }
